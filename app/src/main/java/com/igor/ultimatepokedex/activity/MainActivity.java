@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(String s){
             pokemonList = ConsumirJson.jsonData(s);
-            AdapterPokemons pokeAdapter = new AdapterPokemons(pokemonList);
+            AdapterPokemons pokeAdapter = new AdapterPokemons(pokemonList, getApplicationContext());
             RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
             recyclerPokemons.setLayoutManager(layoutManager);
             recyclerPokemons.setHasFixedSize(true);
