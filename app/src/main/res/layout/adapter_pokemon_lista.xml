@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <LinearLayout
@@ -25,33 +25,35 @@
 
             <TextView
                 android:id="@+id/txtPokeName"
-                android:layout_width="137dp"
+                android:layout_width="match_parent"
                 android:layout_height="38dp"
                 android:layout_weight="1"
-                android:text="Nome" />
+                android:text="Nome"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txtPokeNum"
-                android:layout_width="63dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Numero" />
 
             <TextView
                 android:id="@+id/txtPokeAltura"
-                android:layout_width="63dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Altura" />
 
             <TextView
                 android:id="@+id/txtPokePeso"
-                android:layout_width="62dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Peso" />
 
             <TextView
                 android:id="@+id/txtPokeType"
-                android:layout_width="63dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Tipo" />
         </LinearLayout>
